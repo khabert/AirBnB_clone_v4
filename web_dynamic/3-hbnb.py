@@ -4,7 +4,7 @@ dropdown menus and rental listings"""
 from flask import Flask, render_template
 from models import storage
 import uuid
-app = Flask('web_dynamic')
+app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
